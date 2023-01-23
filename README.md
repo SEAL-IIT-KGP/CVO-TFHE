@@ -1,6 +1,7 @@
-# CVO-TFHE
-The given code provides a demo of how Ciphertext Verification Oracle (CVO) can be used to extract the error terms in LWE-based ciphertexts from TFHE library, based on the bound of these error values. The overall code is divided into two directories, one where the bound is randomly chosen to encompass all possible error values and the other where the bound is carefully chosen based on the timing values of the homomorphic gate operations generating these errors.
-# Code1
-This directory contains the necessary scripts required to launch the attack with a random bound on the error vaues. Since this attack vector is independent of the timing values (and thus is system-independent), we have provided the scripts to generate random data and use the same to run the demo. More details can be found in the readme file inside this directory.
-# Code2
-This directory contains the necessary scripts required to launch the attack with a carefully chosen bound on the error vaues. Since this attack vector is dependent of the timing values (and thus is system-dependent), we have provided testing data that can be used to run the demo. More details can be found in the readme file inside this directory.
+This repository provides the code that has been used to demonstrate a reaction-based attack on two popular LWE-based FHE libraries, namely FHEW and TFHE. 
+
+In case of FHEW, the attack has been carried out without and with timing information.
+
+In case of TFHE, the attack has been carried out without and with timing information. The attack with timing information works with bootstrapping enabled and disabled.
+
+Please follow the instructions provided in each folder in order to simulate the attack on local device.
